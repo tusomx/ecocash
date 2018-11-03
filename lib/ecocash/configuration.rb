@@ -1,0 +1,30 @@
+module Ecocash
+  class Configuration
+    attr_accessor :username, :password, :notify_url, :remarks, :on_behalf_of,
+                 :merchant_code, :merchant_pin, :merchant_number, :country_code,:api_base_url,
+                 :currency_code,:terminal_id, :location, :super_merchant_name, :merchant_name,
+                 :purchase_category_code, :channel, :description, :reference_code
+
+    def initialize
+      @username = nil
+      @password = nil
+      @notify_url = nil
+      @remarks = nil
+      @on_behalf_of = nil
+      @merchant_code = nil
+      @merchant_pin = nil
+      @merchant_number = nil
+      @country_code = nil
+      @api_base_url = nil
+      @currency_code = nil
+      @terminal_id = nil
+      @location = nil
+      @super_merchant_name = nil
+      @merchant_name = nil
+      @purchase_category_code = nil
+      @channel = nil
+      @description = nil
+      @reference_code = nil
+    end
+  end
+end
