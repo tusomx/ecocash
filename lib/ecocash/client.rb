@@ -45,6 +45,28 @@ module Ecocash
        JSON.parse(response.body)
     end
 
+    def transaction_status(msisdn, client_correlator)
+      url = "#{Ecocash.configuration.api_base_url}/#{msisdn}/transactions/amount/#{client_correlator}"
+      auth = {username: "#{Ecocash.configuration.username}", password: "#{Ecocash.configuration.password}"}
+      options = {
+       :basic_auth => auth,
+       :headers => {'Content-Type' => 'application/json'}
+      }
+      response = self.class.get(url,options)
+      JSON.parse(response.body)
+    end
+
+    def list_transactions(msisdn)
+      url = "#{Ecocash.configuration.api_base_url}/#{msisdn}/transactions"
+      auth = {username: "#{Ecocash.configuration.username}", password: "#{Ecocash.configuration.password}"}
+      options = {
+       :basic_auth => auth,
+       :headers => {'Content-Type' => 'application/json'}
+      }
+      response = self.class.get(url,options)
+      JSON.parse(response.body)
+    end
+
     private
 
     def generated_client_correlator
