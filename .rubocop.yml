@@ -1,0 +1,26 @@
+AllCops:
+  Style/Documentation:
+  Enabled: false
+
+  Metrics/ClassLength:
+    Enabled: false
+
+  Metrics/MethodLength:
+    Enabled: false
+
+  Metrics/ModuleLength:
+    Enabled: false
+
+  Layout/IndentArray:
+    EnforcedStyle: consistent
+
+  Layout/EmptyLinesAroundBlockBody:
+    EnforcedStyle: no_empty_lines
+    Enabled: true
+
+  Layout/EmptyLinesAroundClassBody:
+    EnforcedStyle: no_empty_lines
+    Enabled: true
+
+  Layout/EmptyLinesAroundModuleBody:
+    EnforcedStyle: no_empty_lines

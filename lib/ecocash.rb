@@ -1,6 +1,5 @@
 require 'httparty'
 require 'ecocash/configuration'
-require 'ecocash/authentication'
 require 'ecocash/client'
 require 'ecocash/version'
 
