@@ -1,7 +1,8 @@
-require "httparty"
-require "ecocash/configuration"
-require "ecocash/client"
-require "ecocash/version"
+require 'httparty'
+require 'ecocash/configuration'
+require 'ecocash/authentication'
+require 'ecocash/client'
+require 'ecocash/version'
 
 module Ecocash
   class << self
