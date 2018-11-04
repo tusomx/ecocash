@@ -11,7 +11,7 @@ module Ecocash
         :referenceCode => "#{Ecocash.configuration.reference_code}",
         :tranType => "MER",
         :endUserId => "#{msisdn}",
-        :remarks => "#{Ecocash.configuration.remarks}",
+        :remarks => "#{Ecocash.configuration.payments_remarks}",
         :transactionOperationStatus => 'CHARGED',
         :paymentAmount => {
            :charginginformation => {
@@ -20,7 +20,7 @@ module Ecocash
               :description => "#{Ecocash.configuration.description}"
            },
            :chargeMetaData => {
-             :channel => "#{Ecocash.configuration.channel}",
+             :channel => "WEB",
               :purchaseCategoryCode => "#{Ecocash.configuration.purchase_category_code}",
               :onBeHalfOf => "#{Ecocash.configuration.on_behalf_of}"
            }
@@ -76,7 +76,7 @@ module Ecocash
           :tranType => "REF",
           :endUserId => "#{msisdn}",
           :originalEcocashReference => "#{transaction_id}",
-          :remark => "#{Ecocash.configuration.remarks}",
+          :remark => "#{Ecocash.configuration.refund_remarks}",
           :paymentAmount => {
              :charginginformation => {
                 :amount => "#{amount}",
@@ -86,7 +86,7 @@ module Ecocash
              :chargeMetaData => {
                :channel => "SMS",
                 :purchaseCategoryCode => "#{Ecocash.configuration.purchase_category_code}",
-                :onBeHalfOf => "#{Ecocash.configuration.remarks}"
+                :onBeHalfOf => "#{Ecocash.configuration.on_behalf_of}"
              }
           },
           :merchantCode => "#{Ecocash.configuration.merchant_code}",

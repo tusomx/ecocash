@@ -1,15 +1,16 @@
 module Ecocash
   class Configuration
-    attr_accessor :username, :password, :notify_url, :remarks, :on_behalf_of,
+    attr_accessor :username, :password, :notify_url, :payment_remarks, :refund_remarks,:on_behalf_of,
                  :merchant_code, :merchant_pin, :merchant_number, :country_code,:api_base_url,
                  :currency_code,:terminal_id, :location, :super_merchant_name, :merchant_name,
-                 :purchase_category_code, :channel, :description, :reference_code
+                 :purchase_category_code, :description, :reference_code
 
     def initialize
       @username = nil
       @password = nil
       @notify_url = nil
-      @remarks = nil
+      @refund_remarks = nil
+      @payment_remarks = nil
       @on_behalf_of = nil
       @merchant_code = nil
       @merchant_pin = nil
@@ -22,7 +23,6 @@ module Ecocash
       @super_merchant_name = nil
       @merchant_name = nil
       @purchase_category_code = nil
-      @channel = nil
       @description = nil
       @reference_code = nil
     end
