@@ -11,7 +11,7 @@ module Ecocash
         :referenceCode => "#{Ecocash.configuration.reference_code}",
         :tranType => "MER",
         :endUserId => "#{msisdn}",
-        :remarks => "#{Ecocash.configuration.payments_remarks}",
+        :remarks => "#{Ecocash.configuration.payment_remarks}",
         :transactionOperationStatus => 'CHARGED',
         :paymentAmount => {
            :charginginformation => {
