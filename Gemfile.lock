@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ecocash (0.1.0)
+    ecocash (1.0.0)
       httparty (~> 0.16.2)
 
 GEM
