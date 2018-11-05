@@ -30,7 +30,7 @@ require 'ecocash'
 ```
 Values you will need from Ecocash
 + Username and password: These are credentials to authenticate the API
-+ Merchant number and pin: You change PIN on the time of activating your merchant number.
++ Merchant number, merchant code and pin: You change PIN on the time of activating your merchant number.
 
 ### Configuration
 The library uses a configuration block for easy setup:
@@ -101,5 +101,5 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/tusomx/ecocash/blob/master/LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/tusomx/ecocash/blob/master/LICENSE.md) file for details
 
