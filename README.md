@@ -16,16 +16,16 @@ To use the EcoCash Online API, the following things are required:
 ## Installing
 
 This package is available in RubyGems and can be installed with:
-```
+```shell
 gem install ecocash
 ```
 Or import it to your Gemfile
-```
+```ruby
 gem 'ecocash'
 ```
 
 ## Usage
-```
+```ruby
 require 'ecocash'
 ```
 Values you will need from Ecocash
@@ -35,7 +35,7 @@ Values you will need from Ecocash
 ### Configuration
 The library uses a configuration block for easy setup:
 
-```
+```ruby
 Ecocash.configure do |config|
   config.api_base_url = ENV['API_BASE_URL']
   #Authentication
@@ -64,27 +64,27 @@ end
 ```
 
 Initialize the API client
-```
+```ruby
 client = Ecocash::Client.new
 ```
 
 ### Charge Subscriber
-```
+```ruby
 client.charge_subscriber('subscriber_mobile_number','amount')
 ```
 
 ### Refund Subscriber
-```
+```ruby
 client.transaction_reversal('subscriber_mobile_number','transaction_id','amount')
 ```
 
 ### Transaction Status
-```
+```ruby
 client.transaction_status('subscriber_mobile_number','client_correlator')
 ```
 
 ### List Subscriber Transactions
-```
+```ruby
 client.list_transactions('subscriber_mobile_number')
 ```
 
