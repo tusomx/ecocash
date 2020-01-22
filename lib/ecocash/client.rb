@@ -45,9 +45,9 @@ module Ecocash
     end
 
     def transaction_status(msisdn, client_correlator)
-      url = "#{Ecocash.configuration.api_base_url}/#{msisdn}/transactions/amount/#{client_correlator}}"
+      url = "#{Ecocash.configuration.api_base_url}/#{msisdn}/transactions/amount/#{client_correlator}"
       options = {
-        basic_auth: self.class.auth,
+        basic_auth: auth,
         headers: { 'Content-Type' => 'application/json' }
       }
       response = self.class.get(url, options)
