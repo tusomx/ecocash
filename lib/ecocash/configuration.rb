@@ -18,7 +18,8 @@ module Ecocash
                   :merchant_name,
                   :purchase_category_code,
                   :description,
-                  :reference_code
+                  :reference_code,
+                  :client_correlator_prefix
 
     def initialize
       @username = nil
@@ -40,6 +41,7 @@ module Ecocash
       @purchase_category_code = nil
       @description = nil
       @reference_code = nil
+      @client_correlator_prefix = nil
     end
   end
 end

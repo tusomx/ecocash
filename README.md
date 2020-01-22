@@ -60,6 +60,8 @@ Ecocash.configure do |config|
   
   config.currency_code = "USD"
   config.country_code = "ZW"
+  #Client Correlator Prefix
+  config.client_correlator_prefix = "any letter(up to 7) to prefix your client correlator"
 end
 ```
 

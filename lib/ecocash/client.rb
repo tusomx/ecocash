@@ -108,7 +108,9 @@ module Ecocash
     private
 
     def generated_client_correlator
-      Time.zone.now.strftime('GD%d%m%Y%H%M%S%L%3N')
+      Time.now.strftime(
+        "#{Ecocash.configuration.client_correlator_prefix}%d%m%Y%H%M%S%L%3N"
+      )
     end
 
     def auth
