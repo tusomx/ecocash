@@ -91,7 +91,7 @@ module Ecocash
         currencyCode: Ecocash.configuration.currency_code,
         countryCode: Ecocash.configuration.country_code,
         terminalID: Ecocash.configuration.terminal_id,
-        location: cocash.configuration.location,
+        location: Ecocash.configuration.location,
         superMerchantName: Ecocash.configuration.super_merchant_name,
         merchantName: Ecocash.configuration.merchant_name
       }.to_json
